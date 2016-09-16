@@ -1,0 +1,39 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CC	Makefile	/^CC       = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS   = -g -Wall$/;"	m
+CXX	Makefile	/^CXX      = g++$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = $(CFLAGS) -Weffc++$/;"	m
+CXX_OBJS	Makefile	/^CXX_OBJS    = $(patsubst %.cpp,%.o,$(wildcard $(CXX_SOURCES)))$/;"	m
+CXX_SOURCES	Makefile	/^CXX_SOURCES = $(shell find . -name "*.cpp")$/;"	m
+C_OBJS	Makefile	/^C_OBJS      = $(patsubst %.c,%.o,$(wildcard $(C_SOURCES)))$/;"	m
+C_SOURCES	Makefile	/^C_SOURCES   = $(shell find . -name "*.c")$/;"	m
+DIR	Makefile	/^DIR     = $(shell pwd)$/;"	m
+EXEC	Makefile	/^EXEC      = $(shell basename "$(DIR)")$/;"	m
+INCPATH	Makefile	/^INCPATH  =$/;"	m
+LIBS	Makefile	/^LIBS     = -lm$/;"	m
+OBJS	Makefile	/^OBJS        = $(C_OBJS) $(CXX_OBJS)$/;"	m
+ST_RETURE	main.cpp	/^    ST_RETURE = 64$/;"	e	enum:__anon1	file:
+arg	main.cpp	/^    node_t * arg;$/;"	m	struct:sys_st_data_t	file:	access:public
+initRoot	main.cpp	/^node_t * initRoot(void)$/;"	f	signature:(void)
+left	main.cpp	/^    node_t * left;$/;"	m	struct:node_t	file:	access:public
+main	main.cpp	/^int main(int argc, const char * argv[])$/;"	f	signature:(int argc, const char * argv[])
+node_t	main.cpp	/^    node_t(int v):$/;"	f	struct:node_t	access:public	signature:(int v)
+node_t	main.cpp	/^struct node_t$/;"	s	file:
+node_t::left	main.cpp	/^    node_t * left;$/;"	m	struct:node_t	file:	access:public
+node_t::node_t	main.cpp	/^    node_t(int v):$/;"	f	struct:node_t	access:public	signature:(int v)
+node_t::right	main.cpp	/^    node_t * right;$/;"	m	struct:node_t	file:	access:public
+node_t::val	main.cpp	/^    int val;$/;"	m	struct:node_t	file:	access:public
+postOrderItr	main.cpp	/^void postOrderItr(node_t * root)$/;"	f	signature:(node_t * root)
+postOrderRec	main.cpp	/^void postOrderRec(node_t * root)$/;"	f	signature:(node_t * root)
+right	main.cpp	/^    node_t * right;$/;"	m	struct:node_t	file:	access:public
+st	main.cpp	/^    int st;$/;"	m	struct:sys_st_data_t	file:	access:public
+sys_st	main.cpp	/^stack<sys_st_data_t> sys_st;$/;"	v
+sys_st_data_t	main.cpp	/^struct sys_st_data_t$/;"	s	file:
+sys_st_data_t::arg	main.cpp	/^    node_t * arg;$/;"	m	struct:sys_st_data_t	file:	access:public
+sys_st_data_t::st	main.cpp	/^    int st;$/;"	m	struct:sys_st_data_t	file:	access:public
+val	main.cpp	/^    int val;$/;"	m	struct:node_t	file:	access:public
